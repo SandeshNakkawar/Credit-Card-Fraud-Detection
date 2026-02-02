@@ -84,44 +84,48 @@ The trained model is served via a **FastAPI** application.
 
 ### Endpoint
 
-### POST /predict
+---
 
+## POST /predict
 
-### Input Format
+## Input Format
 
 {
   "features": [30 numerical values]
 }
 
-### Output Format
+## Output Format
 {
   "fraud_probability": 0.0001,
   "is_fraud": 0,
   "threshold": 0.5831
 }
 
+---
 
-Reliability & Monitoring
+## Reliability & Monitoring
 
 To make the system robust and production-aware:
 
-Feature-aware input validation
+1) Feature-aware input validation
 
-PCA features validated separately
+   PCA features validated separately
 
-Amount and time validated using business constraints
+   Amount and time validated using business constraints
 
-Inference-time logging
+2) Inference-time logging
 
-Request received
+   Request received
 
-Validation failures
+   Validation failures
 
-Prediction outcomes
+   Prediction outcomes
 
-Prevents crashes from invalid or out-of-distribution inputs
+3) Prevents crashes from invalid or out-of-distribution inputs
 
-Enables basic monitoring, auditability, and debugging
+4) Enables basic monitoring, auditability, and debugging
+
+---
 
 🧠 Key Design Decisions
 
@@ -134,7 +138,9 @@ Enables basic monitoring, auditability, and debugging
 ✅ Separated training from inference
 ✅ Added defensive checks and logging
 
-📈 Real-World Relevance
+---
+
+## 📈 Real-World Relevance
 
 This system mirrors how fraud detection is handled in fintech and payment platforms:
 
@@ -146,7 +152,9 @@ Robust APIs instead of notebooks
 
 Monitoring and failure handling
 
-🔮 Future Improvements
+---
+
+## 🔮 Future Improvements
 
 Cost tuning based on business policy
 
@@ -155,6 +163,8 @@ Model monitoring and data drift detection
 Rule + ML hybrid fraud detection
 
 Analyst dashboard for reviewing flagged transactions
+
+--- 
 
 ### 🏁 Summary
 
