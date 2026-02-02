@@ -144,25 +144,25 @@ To make the system robust and production-aware:
 
 This system mirrors how fraud detection is handled in fintech and payment platforms:
 
-Fast, low-latency transaction scoring
+  1) Fast, low-latency transaction scoring
 
-Business-driven decision thresholds
+  2) Business-driven decision thresholds
 
-Robust APIs instead of notebooks
+  3) Robust APIs instead of notebooks
 
-Monitoring and failure handling
+  4) Monitoring and failure handling
 
 ---
 
 ## 🔮 Future Improvements
 
-Cost tuning based on business policy
+  1) Cost tuning based on business policy
 
-Model monitoring and data drift detection
+  2) Model monitoring and data drift detection
 
-Rule + ML hybrid fraud detection
+  3) Rule + ML hybrid fraud detection
 
-Analyst dashboard for reviewing flagged transactions
+  4) Analyst dashboard for reviewing flagged transactions
 
 --- 
 
